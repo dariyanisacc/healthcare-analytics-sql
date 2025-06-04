@@ -222,8 +222,8 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Contact
 
 For questions or opportunities, please connect on:
-- LinkedIn: [Your LinkedIn Profile]
-- Email: [Your Email]
+- LinkedIn: www.linkedin.com/in/dariyan-jones-919185239
+- Email: dariyanisacc@gmail.com
 
 ---
 
