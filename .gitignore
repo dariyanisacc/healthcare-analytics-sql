@@ -1,0 +1,39 @@
+# Database files
+*.db
+*.sqlite
+*.sql.bak
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Python cache (if using scripts)
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.env.local
+
+# Data files (if containing sensitive info)
+/data/real_data/
+/data/exports/
+
+# Backup files
+/backups/
+
+# Documentation build files
+/docs/_build/
