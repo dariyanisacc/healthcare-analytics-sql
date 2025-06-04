@@ -93,30 +93,32 @@ This project showcases a complete healthcare data warehouse implementation with 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/healthcare-analytics-sql.git
+git clone https://github.com/dariyanisacc/healthcare-analytics-sql.git
 cd healthcare-analytics-sql
 ```
 
-2. Create the database:
+2. Run the automated setup script:
 ```bash
-mysql -u your_username -p < sql/ddl/01_create_database.sql
+./setup_database.sh
 ```
 
-3. Create tables:
+Or manually run each step:
 ```bash
-mysql -u your_username -p healthcare_analytics < sql/ddl/02_create_tables.sql
+mysql -u root -p < sql/ddl/01_create_database.sql
+mysql -u root -p healthcare_analytics < sql/ddl/02_create_tables.sql
+mysql -u root -p healthcare_analytics < sql/dml/01_insert_sample_data.sql
+mysql -u root -p healthcare_analytics < sql/procedures/01_stored_procedures.sql
+mysql -u root -p healthcare_analytics < sql/functions/01_utility_functions.sql
 ```
 
-4. Load sample data:
+### Quick Demo
+
+Run the demo script to see the analytics in action:
 ```bash
-mysql -u your_username -p healthcare_analytics < sql/dml/01_insert_sample_data.sql
+./run_demo.sh
 ```
 
-5. Create stored procedures and functions:
-```bash
-mysql -u your_username -p healthcare_analytics < sql/procedures/01_stored_procedures.sql
-mysql -u your_username -p healthcare_analytics < sql/functions/01_utility_functions.sql
-```
+For detailed examples with actual output, see [EXAMPLE_OUTPUT.md](EXAMPLE_OUTPUT.md)
 
 ## Usage Examples
 
